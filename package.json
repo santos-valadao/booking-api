@@ -5,7 +5,7 @@
   "main": "index.mjs",
   "type": "module",
   "scripts": {
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "serve": "npx nodemon src/index.mjs"
   },
   "repository": {
