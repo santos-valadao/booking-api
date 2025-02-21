@@ -1,0 +1,28 @@
+{
+  "name": "booking-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "serve": "npx nodemon src/index.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santos-valadao/booking-api.git"
+  },
+  "author": "j.santos.m.valadao@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santos-valadao/booking-api/issues"
+  },
+  "homepage": "https://github.com/santos-valadao/booking-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
