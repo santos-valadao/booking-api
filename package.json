@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "jest --passWithNoTests",
-    "serve": "npx nodemon src/index.mjs"
+    "serve": "npx nodemon src/server/server.mjs"
   },
   "repository": {
     "type": "git",
@@ -19,8 +19,8 @@
   },
   "homepage": "https://github.com/santos-valadao/booking-api#readme",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "express-validator": "^7.2.1"
   },
   "devDependencies": {
     "jest": "^29.7.0"
