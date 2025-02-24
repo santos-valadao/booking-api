@@ -2,7 +2,7 @@ import { validationResult } from "express-validator";
 
 var id = 1;
 
-const bookings = [
+const BOOKINGS = [
     {
         id,
         client: 'John Doe',
@@ -13,7 +13,7 @@ const bookings = [
 ];
 
 export const getBookings = (req, res) => {
-    res.status(200).send(bookings);
+    res.status(200).json(BOOKINGS);
 };
 
 export const createBooking = (req, res) => {
@@ -23,10 +23,10 @@ export const createBooking = (req, res) => {
         const booking = req.body;
         booking.id = ++id;
         
-        bookings.push(booking);
+        BOOKINGS.push(booking);
         
-        res.status(201).send(booking);
+        res.status(201).json(booking);
     } else {
-        res.status(422).send(errors);
+        res.status(422).json(errors);
     }
 };
